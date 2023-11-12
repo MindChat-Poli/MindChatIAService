@@ -9,8 +9,9 @@ def ping():
 
 @app.route('/EmotionClassifer', methods=['POST'])
 def EmotionClassifer():
-    data = request.form
-    return jsonify(EmotionClassifierService().classify("Hola"))
+    data = request.get_json();
+    texto_analizar= data['text'];
+    return jsonify(EmotionClassifierService().classify(str(texto_analizar)))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
