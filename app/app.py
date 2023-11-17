@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-from google.cloud import language_v2
 from AnalicerIA.application.EmotionClassiferService import EmotionClassifierService
 from QuestionAnswerIA.application.SummaryService import SummaryService
 
