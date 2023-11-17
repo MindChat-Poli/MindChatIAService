@@ -15,9 +15,6 @@ curl -X GET http://localhost:5000/ping
 
 ### `/EmotionClassifer`
 
--GitHub Copilot: Claro, aquí tienes un ejemplo de cómo podrías documentar el uso de tu API en formato Markdown:
-
-```markdown
 # Documentación de la API
 
 ## Rutas
