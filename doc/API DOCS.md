@@ -15,9 +15,6 @@ curl -X GET http://localhost:5000/ping
 
 ### `/EmotionClassifer`
 
--GitHub Copilot: Claro, aquí tienes un ejemplo de cómo podrías documentar el uso de tu API en formato Markdown:
-
-```markdown
 # Documentación de la API
 
 ## Rutas
@@ -57,6 +54,6 @@ curl -X POST -H "Content-Type: application/json" -d '{"text":"Estoy muy feliz"}'
 Ejemplo de uso:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"question":"¿Qué es la inteligencia artificial?"}' http://localhost:5000/Summary
+curl -X POST -H "Content-Type: application/json" -d '{"question":"¿Qué es la inteligencia artificial?", 'context':'En principio de siglo con la revolucion de la tecnologia a nivel mundial se pensaba que }' http://localhost:5000/Summary
 ```
 ```
