@@ -1,6 +1,6 @@
 import requests
 
-class EmotionClassifier:
+class SummaryIA:
     def __init__(self):
         self.API_URL = "https://api-inference.huggingface.co/models/mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es"
         self.headers = {"Authorization": "Bearer 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"}

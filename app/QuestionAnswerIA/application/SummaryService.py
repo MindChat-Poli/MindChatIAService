@@ -2,7 +2,7 @@ import QuestionAnswerIA.domain.SummaryIA as SummaryIA
 
 class SummaryService:
     def __init__(self):
-        self.summaryIA = SummaryIA.EmotionClassifier()
+        self.summaryIA = SummaryIA.SummaryIA()
 
     def summarize(self, question, context):
         payload = {"question": question, "context": context}
