@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify
-from google.cloud import language_v2
+from google.cloud import language_v1
+from flask_cors import CORS
 from AnalicerIA.application.EmotionClassiferService import EmotionClassifierService
 from QuestionAnswerIA.application.SummaryService import SummaryService
 
 app = Flask(__name__)
-
+CORS(app)
 @app.route('/ping')
 def ping():
     return 'pong'
